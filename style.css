@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    padding: 10px;
+    & main{
+        margin: 10px auto;
+        max-width: 600px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        background-color: #ffe0cf;
+        padding: 20px;
+        border-radius: 20px;
+        border-color: transparent;
+        & h1{
+            text-align: center;
+            color: #09122C;
+            max-width: inherit;
+        }
+        & .container{
+            margin: 5px 20px;
+            width: 90%;
+            & input{
+                width: 90%;
+                max-width: 90%;
+                border-radius: 10px;
+                border-color: transparent;
+                padding: 5px 10px;
+                margin-bottom: 10px;
+                outline: none;
+                font-size: 16px;
+            }
+            & button{
+                background-color: #fc9180;
+                padding: 5px 10px;
+                color: #29180f;
+                font-size: 17px;
+                font-weight: 500;
+                border-radius: 10px;
+                border-color: transparent;
+                &:hover{
+                    cursor: pointer;
+                    background-color: #ce5b4a;
+                    color: #ffe0cf;
+                    box-shadow: 3px 3px 3px 1px rgb(90, 89, 89);
+                }
+            }
+        }
+        & .output{
+            margin: 5px 20px;
+            font-size: 16px;
+            text-align: left;
+            max-width: 90%;
+            & ul{
+                list-style: none;
+                max-width: 100%;
+                & li{
+                    background-color: #5c1228;
+                    color: #ffffff;
+                    padding: 5px 8px;
+                    margin: 5px;
+                    max-width: 90%;
+                    border-radius: 10px;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis; 
+                }
+            }
+        }
+        & .clear{
+            margin: 0 10px;
+            & button{
+                margin-left: 10px;
+                background-color: #fc9180;
+                padding: 5px 10px;
+                color: #29180f;
+                font-size: 17px;
+                font-weight: 500;
+                border-radius: 10px;
+                border-color: transparent;
+                &:hover{
+                    cursor: pointer;
+                    background-color: #ce5b4a;
+                    color: #ffe0cf;
+                    box-shadow: 3px 3px 3px 1px rgb(90, 89, 89);
+                }
+            }
+        }
+    }
+}
